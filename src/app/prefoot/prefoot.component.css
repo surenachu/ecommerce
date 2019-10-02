@@ -1,0 +1,28 @@
+.pakoda{
+    background-image: url("D:\angular\ecom\src\assets\game (1).jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+    background-size: cover;
+}
+.hosana{
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color:maroon;
+    z-index: 100;
+} 
+.hosanaa{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 80%;
+    text-align: center;
+    font-size: 30px;
+    color:maroon;
+    z-index: 100;
+}         
+ul{
+    list-style: none;
+}                                                          

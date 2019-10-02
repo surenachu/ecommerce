@@ -1,0 +1,99 @@
+
+<form class="fm0"  [formGroup]="mygroup"  (ngSubmit)="submit()" >
+
+    <h1 style="text-align-last: center">Signup as new user</h1>
+    
+    <div class="container" style="margin: 0 auto; width: 50%">
+           
+        <div class="box0">
+                <div>
+                    <label> user name : </label>
+                    <input type="text" 
+                    formControlName="username"
+                    placeholder="give your name" 
+                    style="color:black" >
+
+                         <div *ngIf="mygroup.controls.username.touched && 
+                                    mygroup.controls.username.invalid">
+                               
+                                    username is required
+                           
+                        </div>    
+                        <div *ngIf="mygroup.controls.username.minlength &&
+                                    mygroup.controls.username.invalid">
+
+                                    username should have minimum characers of
+                        </div>
+                </div>
+                <br>
+                <div>
+                    <label>age :</label>
+                    <select ngModel name="person" style="color: black; width:100px"  >
+                            <option *ngFor="let myOption of myOptions" [value]="myOption.id"> 
+                                    {{ myOption.age }}
+                            </option>
+                    </select>
+                </div>     
+                <br>
+                <div>
+                    <label> email id :</label>
+                    <input type="email" 
+                    formControlName="email" 
+                    style="color:black" 
+                    placeholder="give your email">
+
+                            <!-- <div *ngIf="mygroup.controls.email.touched && 
+                                        mygroup.controls.email.invalid">
+                                    
+                                        email is required
+                            
+                            </div> -->
+                </div>
+                <br>
+                <div>
+                    <label> passsword :</label>
+                    <input type="text" 
+                    formControlName="passsword" 
+                    style="color:black" 
+                    placeholder="give a password">
+
+                        <!-- <div *ngIf="mygroup.controls.password.touched && 
+                                    mygroup.controls.password.invalid">
+
+                                    password is required
+                                                        
+                        </div> -->
+                </div>
+                <br>
+                <div>
+                    <label> confirm passsword :</label>
+                    <input type="text" 
+                    formControlName="cpasssword" 
+                    style="color:black" 
+                    placeholder="conform the passsword">
+
+                        <!-- <div *ngIf="mygroup.controls.cpassword.touched && 
+                                    mygroup.controls.cpassword.invalid">
+
+                            password is required
+                            
+                        </div>  -->
+                </div>
+                    
+                <br>
+                    
+                <div>
+                    <input type="checkbox" checked="checkbox">
+                    <span>remember me</span>
+                </div>
+        
+            <div class="l-bt0">
+                <button type="submit" class="forgt0">register</button>                               
+            </div>
+            
+        </div>
+            
+    </div>
+    
+    </form>
+

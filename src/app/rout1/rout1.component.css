@@ -1,0 +1,48 @@
+.one{
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 33.33%;
+    text-align: center;
+    margin-right: 55px;
+    background:plum;
+}
+.two{
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 33.33%;
+    text-align: center;
+    margin-right: 55px;
+    background:plum;
+}
+.three{
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 33.33%;
+    text-align: center;
+    margin-right: 55px;
+    background:plum;
+}
+.fb {
+    font-size: 50px;
+    /* border: 1px solid gray; */
+    border-radius: 15px;
+}
+.fb h3,i{
+    font-size: 60px;
+    color:purple;
+
+}
+.content{
+    margin-top: 30px;
+    color: indigo;
+}
+.icon{
+    display: flex;
+    margin: 20px;
+    
+    /* border: 3px solid black; */
+    padding: 50px;
+}

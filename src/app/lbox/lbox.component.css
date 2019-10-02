@@ -1,0 +1,30 @@
+.fm {
+    text-align: center;
+    color: antiquewhite;
+    
+}
+
+.box {
+    /* border: 2px solid black; */
+    padding: 5px;
+}
+
+.log {
+    margin-bottom: 15px;
+    color: black;
+    
+}
+
+.forgt {
+    background-color: rgb(54, 55, 160);
+    
+}
+
+.l-bt {
+    /* background-color: gray; */
+    padding: 10px 
+}
+a{
+    text-decoration: none;
+    
+}

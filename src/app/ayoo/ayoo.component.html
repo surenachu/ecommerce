@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+
+   
+  <div class="Card col-lg-3" *ngFor="let value of dummy" style=" width: 20rem;" >
+  
+    
+  <div class="sad">
+      <img
+      class="border border-success"
+      width="255px"
+      height="200px"
+      src="{{value.imageUrl}}" />
+      <div class="card-body">
+        <h5 class="card-title gomma">{{value.title}}</h5>
+        <div>{{value.demo}}</div>
+        <div>{{value.price}}</div>
+        <div>{{value.category}}</div>
+        <p class="card-text">grand theft auto free world entertainment</p>
+        <a routerLink="/store/:dynamic" class="btn btn-primary bt1">details</a>
+        <a class="btn btn-primary bt1">steam upload</a>
+        
+        
+        </div>
+    </div>  
+    </div>
+    </div>
+    </div>
+
+
+
+
+  

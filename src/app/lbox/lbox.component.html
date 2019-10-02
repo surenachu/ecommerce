@@ -1,0 +1,97 @@
+<form class="fm" #f="ngForm" (ngSubmit)="submit(f)"autocomplete="off">
+
+    <h1 style="text-align-last: center">user login</h1>
+    
+    <div class="container" style="margin: 0 auto; width: 50%">
+           
+        <div class="box">
+                <div ngModelGroup="suggest">
+                    <label> user name :</label>
+                    <input type="text" 
+                    style="color: black"
+                    placeholder="give your name"
+                    [(ngModel)]="logo"
+                    name="uname"
+                    #username="ngModel"  
+                    required
+                    minlength="4"
+                    maxlength="10"
+                    />
+                    <br>
+                    <div>
+                    
+                    <!-- <select ngModel name="person">
+                        <option value="1">shape of you</option>
+                        <option value="2">show me the meaning</option>
+                        <option value="3">symphony</option>
+                    </select> -->
+                    </div>
+                    
+                    <div *ngIf="username.touched && ! username.valid">
+                        <div *ngIf="username.errors.required">
+                             username is required
+                        </div>
+                        <div *ngIf="username.errors.minlength">
+                                username minimum length is
+                                {{ username.errors.minlength.requiredLength }}
+                        </div>
+                        <div *ngIf="username.errors.maxlength">
+                            username maximum length is
+                            {{ username.errors.maxlength.requiredLength }}
+                        </div>                            
+                    </div>   
+
+                </div>
+
+
+
+                <br>
+                
+                
+                
+                <div>
+                    <div ngModelGroup="suggest">
+
+                    <label> password  :</label>
+                    <input type="password" 
+                        style="color: black"
+                        ngModel name="pwd" 
+                        #password="ngModel" 
+                        placeholder="password"
+                        required
+                        minlength="4"
+                        maxlength="10">
+                </div>
+                <div *ngIf="password.touched && ! password.valid">
+                    <div *ngIf="password.errors.required">
+                        password is required
+                    </div>
+                    <div *ngIf="password.errors.minlength">
+                        password minimum length is
+                            {{ password.errors.minlength.requiredLength }}
+                    </div>
+                    <div *ngIf="password.errors.maxlength">
+                        password maximum length is
+                        {{ password.errors.maxlength.requiredLength }}
+                    </div>                            
+                </div>
+                    
+                <br>
+                <br>
+                    
+                <div>
+                    <button type="button" class="log" style="background-color: rgb(42, 182, 170)">login</button>
+                    <input type="checkbox">
+                    <span>remember me</span>
+                </div>
+        
+            <div class="l-bt">
+                <button type="submit" class="forgt"><a routerLink="/register" style="color: whitesmoke"> register now </a></button>           
+                <a href="#" style="color: white">forgot me?</a>
+                
+            </div>
+        </div>
+            
+    </div>
+   </div> 
+</form>
